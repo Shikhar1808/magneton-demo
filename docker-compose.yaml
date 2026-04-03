@@ -1,0 +1,20 @@
+services:
+  mediamtx:
+    image: bluenviron/mediamtx:latest
+    restart: unless-stopped
+    ports:
+      - "8554:8554"
+      - "8888:8888"
+      - "8889:8889"
+      - "8189:8189/udp"
+    volumes:
+      - ./mediamtx.yml:/mediamtx.yml
+
+  your_app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    depends_on:
+      - mediamtx
+    environment:
+      - RTSP_SERVER_URL=rtsp://mediamtx:8554/live

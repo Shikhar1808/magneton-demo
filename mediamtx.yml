@@ -1,0 +1,11 @@
+# mediamtx.yml
+webrtcAddress: :8889
+
+# CRITICAL: set this to your actual host IP (not localhost, not 0.0.0.0)
+webrtcLocalUDPAddress: 172.19.176.1:8189   # your machine's LAN IP
+webrtcLocalTCPAddress: 172.19.176.1:8189
+
+# If accessing from outside LAN, add a STUN server
+webrtcICEServers2:
+  - urls:
+    - stun:stun.l.google.com:19302

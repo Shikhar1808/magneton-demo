@@ -6,7 +6,7 @@ class Detector:
         # load local YOLOv5 model
         self.device = 'cuda' if torch.cuda.is_available() else 'cpu'
 
-        self.model = torch.load("yolov5n.pt", map_location=self.device)
+        self.model = torch.load("yolov8n.pt", map_location=self.device)
         self.model = self.model['model'].float().fuse().eval().to(self.device)
 
     def detect(self, frame):

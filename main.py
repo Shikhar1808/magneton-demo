@@ -10,10 +10,25 @@ from utils.logger import setup_logging
 from config import *
 
 import cv2
+import time
+import signal
+import sys
 
 log = setup_logging()
 
+running = True
+
+def stop(sig, frame):
+    global running
+    running = False
+
+
 def main():
+    global running
+
+    signal.signal(signal.SIGINT, stop)
+    signal.signal(signal.SIGTERM, stop)
+
     num_cams = len(CAMERA_SOURCES)
 
     detector = Detector()
@@ -26,55 +41,70 @@ def main():
     for i, c in enumerate(caps):
         log.info("Camera %d opened: %s", i, c.isOpened())
 
-    while True:
-        live_tiles = []
-        active_frames = {}
-        idle_ids = []
+    frame_time = 1.0 / FPS
 
-        for i, cap in enumerate(caps):
+    try:
+        while running:
+            start = time.time()
 
-            if not cap.isOpened():
-                idle_ids.append(i)
-                live_tiles.append(make_idle_tile(i))
-                continue
+            live_tiles = []
+            active_frames = {}
+            idle_ids = []
 
-            ret, frame = cap.read()
+            for i, cap in enumerate(caps):
 
-            # loop video files
-            if not ret:
-                cap.set(cv2.CAP_PROP_POS_FRAMES, 0)
-                ret, frame = cap.read()
-
-                if not ret:
+                if not cap.isOpened():
                     idle_ids.append(i)
                     live_tiles.append(make_idle_tile(i))
                     continue
 
-            frame = cv2.resize(frame, (FRAME_WIDTH, FRAME_HEIGHT))
+                ret, frame = cap.read()
 
-            dets = detector.detect(frame)
-            print("cam", i, "detections:", len(dets))
+                # loop video files
+                if not ret:
+                    cap.set(cv2.CAP_PROP_POS_FRAMES, 0)
+                    ret, frame = cap.read()
 
-            tracks, new_ids = trackers[i].update(dets)
+                    if not ret:
+                        idle_ids.append(i)
+                        live_tiles.append(make_idle_tile(i))
+                        continue
 
-            annotated = draw_active_tile(frame.copy(), tracks, i)
-            live_tiles.append(annotated)
+                frame = cv2.resize(frame, (FRAME_WIDTH, FRAME_HEIGHT))
 
-            if len(tracks) > 0:
-                active_frames[i] = annotated
-            else:
-                idle_ids.append(i)
+                dets = detector.detect(frame)
+                print("cam", i, "detections:", len(dets))
 
-            if new_ids:
-                alert_mgr.trigger(i, get_label(i), new_ids, annotated)
+                tracks, new_ids = trackers[i].update(dets)
 
-        live_grid = build_grid(live_tiles, LIVE_GRID_COLS)
-        live_grid = add_live_banner(live_grid)
+                annotated = draw_active_tile(frame.copy(), tracks, i)
+                live_tiles.append(annotated)
 
-        # HEADLESS — no imshow
-        recorder.write(active_frames, idle_ids)
+                if len(tracks) > 0:
+                    active_frames[i] = annotated
+                else:
+                    idle_ids.append(i)
 
-    recorder.close()
+                if new_ids:
+                    alert_mgr.trigger(i, get_label(i), new_ids, annotated)
+
+            recorder.write(active_frames, idle_ids)
+
+            # FPS control
+            elapsed = time.time() - start
+            sleep = frame_time - elapsed
+            if sleep > 0:
+                time.sleep(sleep)
+
+    finally:
+        log.info("Stopping recorder...")
+
+        recorder.close()
+
+        for cap in caps:
+            cap.release()
+
+        log.info("Recording finalized")
 
 
 if __name__ == "__main__":

@@ -48,6 +48,7 @@ class SingleFileRecorder:
             self.rows,
         )
 
+        # IMPORTANT: enforce FPS
         cmd = [
             "ffmpeg",
             "-y",
@@ -55,7 +56,7 @@ class SingleFileRecorder:
             "-f", "rawvideo",
             "-pix_fmt", "bgr24",
             "-s", f"{self.canvas_w}x{self.canvas_h}",
-            "-r", str(fps),
+            "-r", str(self.fps),      # input FPS
             "-i", "-",
 
             "-an",
@@ -63,9 +64,11 @@ class SingleFileRecorder:
             "-c:v", "libx264",
             "-preset", "ultrafast",
             "-tune", "zerolatency",
+
             "-pix_fmt", "yuv420p",
-            "-crf", "28",
-            "-g", str(fps),
+
+            "-vsync", "1",
+            "-r", str(self.fps),      # output FPS
 
             "-movflags", "+faststart",
             self.path,
@@ -75,6 +78,7 @@ class SingleFileRecorder:
             cmd,
             stdin=subprocess.PIPE,
             stderr=subprocess.PIPE,
+            bufsize=0,
         )
 
         log.info("SingleFileRecorder started - FFmpeg PID %d", self._proc.pid)
@@ -103,13 +107,17 @@ class SingleFileRecorder:
 
         try:
             self._proc.stdin.write(canvas.tobytes())
-        except Exception as e:
+        except Exception:
             err = self._proc.stderr.read().decode()
             log.error("FFmpeg crashed: %s", err)
             self._proc = None
 
     def close(self):
         if self._proc:
-            self._proc.stdin.close()
-            self._proc.wait()
+            try:
+                self._proc.stdin.close()
+                self._proc.wait()
+            except Exception:
+                pass
+
             log.info("Recording saved: %s", self.path)

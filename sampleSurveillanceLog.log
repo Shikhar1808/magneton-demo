@@ -1,0 +1,247 @@
+2026-04-01 00:54:50 | INFO     | Surveillance | ============================================================
+2026-04-01 00:54:50 | INFO     | Surveillance | Surveillance system starting – 4 camera(s)
+2026-04-01 00:54:50 | INFO     | Surveillance | ============================================================
+2026-04-01 00:54:50 | INFO     | Surveillance | Loading YOLO model...
+2026-04-01 00:54:50 | INFO     | Surveillance | YOLO model loaded successfully
+2026-04-01 00:54:50 | INFO     | Surveillance | AlertManager started (email=disabled)
+2026-04-01 00:54:50 | INFO     | Surveillance | Camera 0 (0) opened successfully
+2026-04-01 00:54:50 | INFO     | Surveillance | Camera 1 (cam1.mp4) opened successfully
+2026-04-01 00:54:50 | INFO     | Surveillance | Camera 2 (cam2.mp4) opened successfully
+2026-04-01 00:54:50 | INFO     | Surveillance | Camera 3 (cam3.mp4) opened successfully
+2026-04-01 00:54:50 | INFO     | Surveillance | FFmpeg recording to: output_20260401_005450.avi
+2026-04-01 00:54:50 | INFO     | Surveillance | Entering main loop. Press ESC to quit.
+2026-04-01 00:54:51 | DEBUG    | Surveillance | CAM 0: new track ID 1
+2026-04-01 00:54:51 | INFO     | Surveillance | Snapshot saved: snapshots/cam0_20260401_005451.jpg
+2026-04-01 00:54:54 | DEBUG    | Surveillance | CAM 1: new track ID 1
+2026-04-01 00:54:54 | INFO     | Surveillance | Snapshot saved: snapshots/cam1_20260401_005454.jpg
+2026-04-01 00:54:54 | DEBUG    | Surveillance | CAM 2: new track ID 1
+2026-04-01 00:54:54 | INFO     | Surveillance | Snapshot saved: snapshots/cam2_20260401_005454.jpg
+2026-04-01 00:54:58 | DEBUG    | Surveillance | CAM 3: new track ID 1
+2026-04-01 00:54:58 | INFO     | Surveillance | Snapshot saved: snapshots/cam3_20260401_005458.jpg
+2026-04-01 00:55:01 | DEBUG    | Surveillance | CAM 0: new track ID 3
+2026-04-01 00:55:01 | DEBUG    | Surveillance | CAM 0: alert suppressed (cooldown active)
+2026-04-01 00:55:01 | DEBUG    | Surveillance | CAM 1: new track ID 2
+2026-04-01 00:55:01 | DEBUG    | Surveillance | CAM 1: alert suppressed (cooldown active)
+2026-04-01 00:55:02 | DEBUG    | Surveillance | Camera 3: video ended, looping
+2026-04-01 00:55:04 | INFO     | Surveillance | Running: 100 frames | 7.1 FPS
+2026-04-01 00:55:10 | DEBUG    | Surveillance | CAM 3: new track ID 2
+2026-04-01 00:55:10 | DEBUG    | Surveillance | CAM 3: alert suppressed (cooldown active)
+2026-04-01 00:55:14 | DEBUG    | Surveillance | Camera 3: video ended, looping
+2026-04-01 00:55:14 | DEBUG    | Surveillance | CAM 1: new track ID 3
+2026-04-01 00:55:14 | DEBUG    | Surveillance | CAM 1: alert suppressed (cooldown active)
+2026-04-01 00:55:15 | DEBUG    | Surveillance | Camera 2: video ended, looping
+2026-04-01 00:55:16 | INFO     | Surveillance | Running: 200 frames | 7.7 FPS
+2026-04-01 00:55:18 | DEBUG    | Surveillance | CAM 2: new track ID 2
+2026-04-01 00:55:18 | DEBUG    | Surveillance | CAM 2: alert suppressed (cooldown active)
+2026-04-01 00:55:18 | DEBUG    | Surveillance | CAM 3: new track ID 3
+2026-04-01 00:55:18 | DEBUG    | Surveillance | CAM 3: alert suppressed (cooldown active)
+2026-04-01 00:55:21 | DEBUG    | Surveillance | Camera 3: video ended, looping
+2026-04-01 00:55:25 | INFO     | Surveillance | Running: 300 frames | 8.6 FPS
+2026-04-01 00:55:26 | DEBUG    | Surveillance | CAM 3: new track ID 4
+2026-04-01 00:55:26 | DEBUG    | Surveillance | CAM 3: alert suppressed (cooldown active)
+2026-04-01 00:55:29 | DEBUG    | Surveillance | Camera 3: video ended, looping
+2026-04-01 00:55:33 | DEBUG    | Surveillance | Camera 2: video ended, looping
+2026-04-01 00:55:34 | DEBUG    | Surveillance | CAM 3: new track ID 5
+2026-04-01 00:55:34 | INFO     | Surveillance | Snapshot saved: snapshots/cam3_20260401_005534.jpg
+2026-04-01 00:55:35 | INFO     | Surveillance | Running: 400 frames | 9.0 FPS
+2026-04-01 00:55:35 | DEBUG    | Surveillance | CAM 2: new track ID 3
+2026-04-01 00:55:35 | INFO     | Surveillance | Snapshot saved: snapshots/cam2_20260401_005535.jpg
+2026-04-01 00:55:37 | DEBUG    | Surveillance | Camera 3: video ended, looping
+2026-04-01 00:55:42 | DEBUG    | Surveillance | CAM 3: new track ID 6
+2026-04-01 00:55:42 | DEBUG    | Surveillance | CAM 3: alert suppressed (cooldown active)
+2026-04-01 00:55:44 | INFO     | Surveillance | Running: 500 frames | 9.2 FPS
+2026-04-01 00:55:45 | DEBUG    | Surveillance | Camera 3: video ended, looping
+2026-04-01 00:55:49 | INFO     | Surveillance | ESC pressed – shutting down
+2026-04-01 00:55:49 | INFO     | Surveillance | Cleaning up...
+2026-04-01 00:55:49 | DEBUG    | Surveillance | Camera 0 released
+2026-04-01 00:55:49 | DEBUG    | Surveillance | Camera 1 released
+2026-04-01 00:55:49 | DEBUG    | Surveillance | Camera 2 released
+2026-04-01 00:55:49 | DEBUG    | Surveillance | Camera 3 released
+2026-04-01 01:03:10 | INFO     | Surveillance | ============================================================
+2026-04-01 01:03:10 | INFO     | Surveillance | Surveillance system starting – 4 camera(s)
+2026-04-01 01:03:10 | INFO     | Surveillance | LIVE: all cameras | RECORDING: active cameras only
+2026-04-01 01:03:10 | INFO     | Surveillance | ============================================================
+2026-04-01 01:03:10 | INFO     | Surveillance | Loading YOLO model...
+2026-04-01 01:03:10 | INFO     | Surveillance | YOLO model loaded
+2026-04-01 01:03:10 | INFO     | Surveillance | AlertManager started (email=disabled)
+2026-04-01 01:03:11 | INFO     | Surveillance | Camera 0 [Front Door] opened
+2026-04-01 01:03:11 | INFO     | Surveillance | Camera 1 [Backyard] opened
+2026-04-01 01:03:11 | INFO     | Surveillance | Camera 2 [Parking Lot] opened
+2026-04-01 01:03:11 | INFO     | Surveillance | Camera 3 [Side Gate] opened
+2026-04-01 01:03:11 | INFO     | Surveillance | Press ESC to quit.
+2026-04-01 01:03:11 | DEBUG    | Surveillance | CAM 0: new track ID 1
+2026-04-01 01:03:11 | INFO     | Surveillance | Snapshot saved: snapshots/cam0_20260401_010311.jpg
+2026-04-01 01:03:11 | INFO     | Surveillance | Recording segment 1 started | cameras: ['Front Door'] | size: 640x480
+2026-04-01 01:03:13 | DEBUG    | Surveillance | CAM 1: new track ID 1
+2026-04-01 01:03:13 | INFO     | Surveillance | Snapshot saved: snapshots/cam1_20260401_010313.jpg
+2026-04-01 01:03:13 | INFO     | Surveillance | Recording segment 2 started | cameras: ['Front Door', 'Backyard'] | size: 1280x480
+2026-04-01 01:03:14 | DEBUG    | Surveillance | CAM 2: new track ID 1
+2026-04-01 01:03:14 | INFO     | Surveillance | Snapshot saved: snapshots/cam2_20260401_010314.jpg
+2026-04-01 01:03:14 | INFO     | Surveillance | Recording segment 3 started | cameras: ['Front Door', 'Backyard', 'Parking Lot'] | size: 1280x960
+2026-04-01 01:03:14 | INFO     | Surveillance | Recording segment 4 started | cameras: ['Backyard', 'Parking Lot'] | size: 1280x480
+2026-04-01 01:03:14 | INFO     | Surveillance | Recording segment 5 started | cameras: ['Front Door', 'Backyard', 'Parking Lot'] | size: 1280x960
+2026-04-01 01:03:14 | INFO     | Surveillance | Recording segment 6 started | cameras: ['Front Door', 'Backyard'] | size: 1280x480
+2026-04-01 01:03:15 | INFO     | Surveillance | Recording segment 7 started | cameras: ['Backyard'] | size: 640x480
+2026-04-01 01:03:15 | DEBUG    | Surveillance | CAM 0: new track ID 2
+2026-04-01 01:03:15 | DEBUG    | Surveillance | CAM 0: alert suppressed (cooldown)
+2026-04-01 01:03:15 | INFO     | Surveillance | Recording segment 8 started | cameras: ['Front Door', 'Backyard'] | size: 1280x480
+2026-04-01 01:03:16 | INFO     | Surveillance | Recording segment 9 started | cameras: ['Front Door', 'Backyard', 'Parking Lot'] | size: 1280x960
+2026-04-01 01:03:17 | INFO     | Surveillance | Recording segment 10 started | cameras: ['Backyard', 'Parking Lot'] | size: 1280x480
+2026-04-01 01:03:17 | DEBUG    | Surveillance | CAM 3: new track ID 1
+2026-04-01 01:03:17 | INFO     | Surveillance | Snapshot saved: snapshots/cam3_20260401_010317.jpg
+2026-04-01 01:03:18 | INFO     | Surveillance | Recording segment 11 started | cameras: ['Backyard', 'Parking Lot', 'Side Gate'] | size: 1280x960
+2026-04-01 01:03:18 | INFO     | Surveillance | Recording segment 12 started | cameras: ['Front Door', 'Backyard', 'Parking Lot', 'Side Gate'] | size: 1280x960
+2026-04-01 01:03:19 | INFO     | Surveillance | Recording segment 13 started | cameras: ['Front Door', 'Backyard', 'Parking Lot'] | size: 1280x960
+2026-04-01 01:03:20 | DEBUG    | Surveillance | CAM 1: new track ID 2
+2026-04-01 01:03:20 | DEBUG    | Surveillance | CAM 1: alert suppressed (cooldown)
+2026-04-01 01:03:20 | INFO     | Surveillance | Recording segment 14 started | cameras: ['Backyard', 'Parking Lot'] | size: 1280x480
+2026-04-01 01:03:21 | INFO     | Surveillance | Recording segment 15 started | cameras: ['Front Door', 'Backyard', 'Parking Lot'] | size: 1280x960
+2026-04-01 01:03:22 | INFO     | Surveillance | Recording segment 16 started | cameras: ['Backyard', 'Parking Lot'] | size: 1280x480
+2026-04-01 01:03:22 | INFO     | Surveillance | Recording segment 17 started | cameras: ['Front Door', 'Backyard', 'Parking Lot'] | size: 1280x960
+2026-04-01 01:03:22 | INFO     | Surveillance | Frames: 100 | FPS: 8.5 | Active cams: [0, 1, 2]
+2026-04-01 01:03:26 | DEBUG    | Surveillance | CAM 3: new track ID 2
+2026-04-01 01:03:26 | DEBUG    | Surveillance | CAM 3: alert suppressed (cooldown)
+2026-04-01 01:03:26 | INFO     | Surveillance | Recording segment 18 started | cameras: ['Front Door', 'Backyard', 'Parking Lot', 'Side Gate'] | size: 1280x960
+2026-04-01 01:03:27 | INFO     | Surveillance | Recording segment 19 started | cameras: ['Front Door', 'Backyard', 'Parking Lot'] | size: 1280x960
+2026-04-01 01:03:30 | DEBUG    | Surveillance | CAM 1: new track ID 3
+2026-04-01 01:03:30 | DEBUG    | Surveillance | CAM 1: alert suppressed (cooldown)
+2026-04-01 01:03:30 | INFO     | Surveillance | Recording segment 20 started | cameras: ['Backyard', 'Parking Lot'] | size: 1280x480
+2026-04-01 01:03:30 | INFO     | Surveillance | Recording segment 21 started | cameras: ['Front Door', 'Backyard', 'Parking Lot'] | size: 1280x960
+2026-04-01 01:03:30 | INFO     | Surveillance | Recording segment 22 started | cameras: ['Front Door', 'Backyard'] | size: 1280x480
+2026-04-01 01:03:31 | INFO     | Surveillance | Recording segment 23 started | cameras: ['Backyard'] | size: 640x480
+2026-04-01 01:03:31 | INFO     | Surveillance | Recording segment 24 started | cameras: ['Front Door', 'Backyard'] | size: 1280x480
+2026-04-01 01:03:31 | DEBUG    | Surveillance | CAM 0: new track ID 4
+2026-04-01 01:03:31 | DEBUG    | Surveillance | CAM 0: alert suppressed (cooldown)
+2026-04-01 01:03:32 | INFO     | Surveillance | Recording segment 25 started | cameras: ['Front Door'] | size: 640x480
+2026-04-01 01:03:33 | INFO     | Surveillance | Frames: 200 | FPS: 9.1 | Active cams: [0]
+2026-04-01 01:03:34 | DEBUG    | Surveillance | CAM 2: new track ID 2
+2026-04-01 01:03:34 | DEBUG    | Surveillance | CAM 2: alert suppressed (cooldown)
+2026-04-01 01:03:34 | INFO     | Surveillance | Recording segment 26 started | cameras: ['Front Door', 'Parking Lot'] | size: 1280x480
+2026-04-01 01:03:34 | INFO     | Surveillance | Recording segment 27 started | cameras: ['Front Door'] | size: 640x480
+2026-04-01 01:03:35 | INFO     | Surveillance | Recording segment 28 started | cameras: ['Front Door', 'Parking Lot'] | size: 1280x480
+2026-04-01 01:03:35 | DEBUG    | Surveillance | CAM 3: new track ID 3
+2026-04-01 01:03:35 | DEBUG    | Surveillance | CAM 3: alert suppressed (cooldown)
+2026-04-01 01:03:35 | INFO     | Surveillance | Recording segment 29 started | cameras: ['Front Door', 'Parking Lot', 'Side Gate'] | size: 1280x960
+2026-04-01 01:03:36 | INFO     | Surveillance | Recording segment 30 started | cameras: ['Front Door', 'Parking Lot'] | size: 1280x480
+2026-04-01 01:03:42 | INFO     | Surveillance | Frames: 300 | FPS: 9.4 | Active cams: [0, 2]
+2026-04-01 01:03:43 | DEBUG    | Surveillance | CAM 3: new track ID 4
+2026-04-01 01:03:43 | DEBUG    | Surveillance | CAM 3: alert suppressed (cooldown)
+2026-04-01 01:03:43 | INFO     | Surveillance | Recording segment 31 started | cameras: ['Front Door', 'Parking Lot', 'Side Gate'] | size: 1280x960
+2026-04-01 01:03:44 | INFO     | Surveillance | Recording segment 32 started | cameras: ['Front Door', 'Parking Lot'] | size: 1280x480
+2026-04-01 01:03:49 | INFO     | Surveillance | Recording segment 33 started | cameras: ['Front Door'] | size: 640x480
+2026-04-01 01:03:51 | DEBUG    | Surveillance | CAM 3: new track ID 5
+2026-04-01 01:03:51 | INFO     | Surveillance | Snapshot saved: snapshots/cam3_20260401_010351.jpg
+2026-04-01 01:03:51 | INFO     | Surveillance | Recording segment 34 started | cameras: ['Front Door', 'Side Gate'] | size: 1280x480
+2026-04-01 01:03:52 | INFO     | Surveillance | Frames: 400 | FPS: 9.6 | Active cams: [0, 3]
+2026-04-01 01:03:52 | INFO     | Surveillance | Recording segment 35 started | cameras: ['Front Door'] | size: 640x480
+2026-04-01 01:03:53 | DEBUG    | Surveillance | CAM 2: new track ID 3
+2026-04-01 01:03:53 | INFO     | Surveillance | Snapshot saved: snapshots/cam2_20260401_010353.jpg
+2026-04-01 01:03:53 | INFO     | Surveillance | Recording segment 36 started | cameras: ['Front Door', 'Parking Lot'] | size: 1280x480
+2026-04-01 01:03:53 | INFO     | Surveillance | Recording segment 37 started | cameras: ['Front Door'] | size: 640x480
+2026-04-01 01:03:53 | INFO     | Surveillance | Recording segment 38 started | cameras: ['Front Door', 'Parking Lot'] | size: 1280x480
+2026-04-01 01:04:00 | DEBUG    | Surveillance | CAM 3: new track ID 6
+2026-04-01 01:04:00 | DEBUG    | Surveillance | CAM 3: alert suppressed (cooldown)
+2026-04-01 01:04:00 | INFO     | Surveillance | Recording segment 39 started | cameras: ['Front Door', 'Parking Lot', 'Side Gate'] | size: 1280x960
+2026-04-01 01:04:01 | INFO     | Surveillance | Recording segment 40 started | cameras: ['Front Door', 'Parking Lot'] | size: 1280x480
+2026-04-01 01:04:02 | INFO     | Surveillance | Recording segment 41 started | cameras: ['Front Door', 'Backyard', 'Parking Lot'] | size: 1280x960
+2026-04-01 01:04:02 | INFO     | Surveillance | Frames: 500 | FPS: 9.7 | Active cams: [0, 1, 2]
+2026-04-01 01:04:02 | INFO     | Surveillance | ESC – shutting down
+2026-04-01 01:04:03 | INFO     | Surveillance | SmartRecorder closed (total segments: 41)
+2026-04-01 01:04:03 | INFO     | Surveillance | Done | 503 frames | 52.4s | 9.6 FPS
+2026-04-01 01:04:03 | INFO     | Surveillance | ============================================================
+2026-04-01 01:07:26 | INFO     | ================================================================
+2026-04-01 01:07:26 | INFO     | Surveillance system  -  4 camera(s)
+2026-04-01 01:07:26 | INFO     | LIVE VIEW  : all 4 cameras always visible
+2026-04-01 01:07:26 | INFO     | RECORDING  : only cameras with active detections
+2026-04-01 01:07:26 | INFO     | ================================================================
+2026-04-01 01:07:26 | INFO     | Loading YOLO model ...
+2026-04-01 01:07:26 | INFO     | YOLO model loaded
+2026-04-01 01:07:26 | INFO     | AlertManager ready  (email=OFF)
+2026-04-01 01:07:26 | INFO     | Camera 0 [Front Door] opened OK
+2026-04-01 01:07:26 | INFO     | Camera 1 [Backyard] opened OK
+2026-04-01 01:07:26 | INFO     | Camera 2 [Parking Lot] opened OK
+2026-04-01 01:07:26 | INFO     | Camera 3 [Side Gate] opened OK
+2026-04-01 01:07:26 | INFO     | Running ... press ESC to quit.
+2026-04-01 01:07:27 | DEBUG    | CAM 0: new track ID 1
+2026-04-01 01:07:27 | WARNING  | INTRUSION | Front Door           (cam 0) | tracks [1] | 2026-04-01 01:07:27
+2026-04-01 01:07:27 | INFO     | Snapshot -> snapshots/cam0_20260401_010727.jpg
+2026-04-01 01:07:27 | INFO     | REC segment 000 opened | cams: ['Front Door'] | resolution: 640x480 | -> recordings/seg000_20260401_010727_cam0.avi
+2026-04-01 01:07:29 | DEBUG    | CAM 1: new track ID 1
+2026-04-01 01:07:29 | WARNING  | INTRUSION | Backyard             (cam 1) | tracks [1] | 2026-04-01 01:07:29
+2026-04-01 01:07:29 | INFO     | Snapshot -> snapshots/cam1_20260401_010729.jpg
+2026-04-01 01:07:29 | INFO     | REC segment 000 closed
+2026-04-01 01:07:29 | INFO     | REC segment 001 opened | cams: ['Front Door', 'Backyard'] | resolution: 1280x480 | -> recordings/seg001_20260401_010729_cam0_1.avi
+2026-04-01 01:07:29 | DEBUG    | CAM 2: new track ID 1
+2026-04-01 01:07:29 | WARNING  | INTRUSION | Parking Lot          (cam 2) | tracks [1] | 2026-04-01 01:07:29
+2026-04-01 01:07:29 | INFO     | Snapshot -> snapshots/cam2_20260401_010729.jpg
+2026-04-01 01:07:29 | INFO     | REC segment 001 closed
+2026-04-01 01:07:29 | INFO     | REC segment 002 opened | cams: ['Front Door', 'Backyard', 'Parking Lot'] | resolution: 1280x960 | -> recordings/seg002_20260401_010729_cam0_1_2.avi
+2026-04-01 01:07:30 | INFO     | REC segment 002 closed
+2026-04-01 01:07:30 | INFO     | REC segment 003 opened | cams: ['Front Door', 'Backyard'] | resolution: 1280x480 | -> recordings/seg003_20260401_010730_cam0_1.avi
+2026-04-01 01:07:32 | INFO     | REC segment 003 closed
+2026-04-01 01:07:32 | INFO     | REC segment 004 opened | cams: ['Front Door', 'Backyard', 'Parking Lot'] | resolution: 1280x960 | -> recordings/seg004_20260401_010732_cam0_1_2.avi
+2026-04-01 01:07:33 | DEBUG    | CAM 3: new track ID 1
+2026-04-01 01:07:33 | WARNING  | INTRUSION | Side Gate            (cam 3) | tracks [1] | 2026-04-01 01:07:33
+2026-04-01 01:07:33 | INFO     | Snapshot -> snapshots/cam3_20260401_010733.jpg
+2026-04-01 01:07:33 | INFO     | REC segment 004 closed
+2026-04-01 01:07:33 | INFO     | REC segment 005 opened | cams: ['Backyard', 'Parking Lot', 'Side Gate'] | resolution: 1280x960 | -> recordings/seg005_20260401_010733_cam1_2_3.avi
+2026-04-01 01:07:34 | INFO     | REC segment 005 closed
+2026-04-01 01:07:34 | INFO     | REC segment 006 opened | cams: ['Backyard', 'Parking Lot'] | resolution: 1280x480 | -> recordings/seg006_20260401_010734_cam1_2.avi
+2026-04-01 01:07:35 | DEBUG    | CAM 1: new track ID 2
+2026-04-01 01:07:35 | DEBUG    | CAM 1: alert in cooldown, skipped
+2026-04-01 01:07:35 | DEBUG    | CAM 3: video looped
+2026-04-01 01:07:36 | INFO     | REC segment 006 closed
+2026-04-01 01:07:36 | INFO     | REC segment 007 opened | cams: ['Front Door', 'Backyard', 'Parking Lot'] | resolution: 1280x960 | -> recordings/seg007_20260401_010736_cam0_1_2.avi
+2026-04-01 01:07:36 | INFO     | REC segment 007 closed
+2026-04-01 01:07:36 | INFO     | REC segment 008 opened | cams: ['Backyard', 'Parking Lot'] | resolution: 1280x480 | -> recordings/seg008_20260401_010736_cam1_2.avi
+2026-04-01 01:07:36 | DEBUG    | CAM 0: new track ID 2
+2026-04-01 01:07:36 | DEBUG    | CAM 0: alert in cooldown, skipped
+2026-04-01 01:07:36 | INFO     | REC segment 008 closed
+2026-04-01 01:07:36 | INFO     | REC segment 009 opened | cams: ['Front Door', 'Backyard', 'Parking Lot'] | resolution: 1280x960 | -> recordings/seg009_20260401_010736_cam0_1_2.avi
+2026-04-01 01:07:37 | INFO     | Frames: 100  |  FPS: 9.3  |  Active cams: [0, 1, 2]
+2026-04-01 01:07:37 | INFO     | ESC pressed - shutting down ...
+2026-04-01 01:07:38 | DEBUG    | Camera 0 released
+2026-04-01 01:07:38 | DEBUG    | Camera 1 released
+2026-04-01 01:07:38 | DEBUG    | Camera 2 released
+2026-04-01 01:07:38 | DEBUG    | Camera 3 released
+2026-04-01 01:07:38 | INFO     | REC segment 009 closed
+2026-04-01 01:07:38 | INFO     | SmartRecorder closed  (total segments: 10)
+2026-04-01 01:07:38 | INFO     | Session ended  |  104 frames  |  11.7s  |  avg 8.9 FPS
+2026-04-01 01:07:38 | INFO     | ================================================================
+2026-04-01 01:17:23 | INFO     | ================================================================
+2026-04-01 01:17:23 | INFO     | Surveillance system  -  4 camera(s)
+2026-04-01 01:17:23 | INFO     | LIVE VIEW : all cameras  |  RECORDING : single continuous file
+2026-04-01 01:17:23 | INFO     | ================================================================
+2026-04-01 01:17:23 | INFO     | Loading YOLO model ...
+2026-04-01 01:17:23 | INFO     | YOLO model loaded
+2026-04-01 01:17:23 | INFO     | AlertManager ready (email=OFF)
+2026-04-01 01:17:23 | INFO     | SingleFileRecorder started | canvas: 1280x960 (2x2 tiles) | -> recordings/surveillance_20260401_011723.avi
+2026-04-01 01:17:23 | INFO     | Camera 0 [Front Door] opened OK
+2026-04-01 01:17:23 | INFO     | Camera 1 [Backyard] opened OK
+2026-04-01 01:17:23 | INFO     | Camera 2 [Parking Lot] opened OK
+2026-04-01 01:17:23 | INFO     | Camera 3 [Side Gate] opened OK
+2026-04-01 01:17:23 | INFO     | Running ... press ESC to quit.
+2026-04-01 01:17:24 | DEBUG    | CAM 0: new track ID 1
+2026-04-01 01:17:24 | WARNING  | INTRUSION | Front Door           (cam 0) | tracks [1] | 2026-04-01 01:17:24
+2026-04-01 01:17:24 | INFO     | Snapshot -> snapshots/cam0_20260401_011724.jpg
+2026-04-01 01:17:26 | DEBUG    | CAM 1: new track ID 1
+2026-04-01 01:17:26 | WARNING  | INTRUSION | Backyard             (cam 1) | tracks [1] | 2026-04-01 01:17:26
+2026-04-01 01:17:26 | INFO     | Snapshot -> snapshots/cam1_20260401_011726.jpg
+2026-04-01 01:17:26 | DEBUG    | CAM 2: new track ID 1
+2026-04-01 01:17:26 | WARNING  | INTRUSION | Parking Lot          (cam 2) | tracks [1] | 2026-04-01 01:17:26
+2026-04-01 01:17:26 | INFO     | Snapshot -> snapshots/cam2_20260401_011726.jpg
+2026-04-01 01:17:29 | DEBUG    | CAM 3: new track ID 1
+2026-04-01 01:17:29 | WARNING  | INTRUSION | Side Gate            (cam 3) | tracks [1] | 2026-04-01 01:17:29
+2026-04-01 01:17:29 | INFO     | Snapshot -> snapshots/cam3_20260401_011729.jpg
+2026-04-01 01:17:31 | DEBUG    | CAM 1: new track ID 2
+2026-04-01 01:17:31 | DEBUG    | CAM 1: alert in cooldown
+2026-04-01 01:17:32 | DEBUG    | CAM 3: video looped
+2026-04-01 01:17:34 | INFO     | Frames: 100  |  FPS: 9.5  |  Active: ['Backyard', 'Parking Lot']
+2026-04-01 01:17:34 | INFO     | ESC pressed - shutting down ...
+2026-04-01 01:17:34 | DEBUG    | Camera 0 released
+2026-04-01 01:17:34 | DEBUG    | Camera 1 released
+2026-04-01 01:17:34 | DEBUG    | Camera 2 released
+2026-04-01 01:17:34 | DEBUG    | Camera 3 released
+2026-04-01 01:17:49 | WARNING  | FFmpeg close warning: Command '['ffmpeg', '-y', '-f', 'rawvideo', '-vcodec', 'rawvideo', '-pix_fmt', 'bgr24', '-s', '1280x960', '-r', '20', '-i', '-', '-an', '-vcodec', 'mpeg4', 'recordings/surveillance_20260401_011723.avi']' timed out after 15 seconds
+2026-04-01 01:17:49 | INFO     | Session ended  |  104 frames  |  26.5s  |  avg 3.9 FPS
+2026-04-01 01:17:49 | INFO     | ================================================================
